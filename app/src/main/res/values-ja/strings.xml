@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">アマチュア無線局免許情報検索</string>
+    <string name="describe_source_of_information">"このサービスは、総務省 電波利用ホームページのWeb-API機能を利用して取得した情報をもとに作成していますが、サービスの内容は総務省によって保証されたものではありません。"</string>
+    <string name="total_count">取得件数</string>
+    <string name="latest_update_date">最終更新日</string>
+    <string name="regional_bureau_of_telecommunications">所轄総合通信局</string>
+    <string name="kanto_bureau_of_telecommunications">"関東総合通信局 "</string>
+    <string name="hokkaido_bureau_of_telecommunications">北海道総合通信局</string>
+    <string name="tohoku_bureau_of_telecommunications">東北総合通信局</string>
+    <string name="shinetsu_bureau_of_telecommunications">信越総合通信局</string>
+    <string name="hokuriku_bureau_of_telecommunications">北陸総合通信局</string>
+    <string name="tokai_bureau_of_telecommunications">東海総合通信局</string>
+    <string name="kinki_bureau_of_telecommunications">近畿総合通信局</string>
+    <string name="chugoku_bureau_of_telecommunications">中国総合通信局</string>
+    <string name="shikoku_bureau_of_telecommunications">四国総合通信局</string>
+    <string name="kyushu_bureau_of_telecommunications">九州総合通信局</string>
+    <string name="okinawa_office_of_telecommunications">沖縄総合通信事務所</string>
+    <string name="call_signs">呼出符号</string>
+    <string name="cases_100">100件</string>
+    <string name="cases_500">500件</string>
+    <string name="clear">クリア</string>
+    <string name="search">検索</string>
+    <string name="validCallSign">呼出符号は次の値で入力してください [A-Z or 0-9]</string>
+    <string name="search_result">検索結果</string>
+    <string name="output_as_a_csv">CSVファイルで出力</string>
+    <string name="number_of_acquisitions">取得件数</string>
+    <string name="permitted_operating_hours">運用許容時間</string>
+    <string name="licence_date">免許の年月日</string>
+    <string name="valid_terms">免許の有効期限</string>
+    <string name="movement_area">移動範囲</string>
+    <string name="radio_equipment_location">無線設備の設置場所/常置場所</string>
+    <string name="radio_spec">電波の形式、周波数及び空中線電力</string>
+</resources>

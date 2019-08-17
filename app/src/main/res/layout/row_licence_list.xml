@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/primary_text_dark"
+              android:id="@+id/displayNumber"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:text="@string/call_signs"
+                      android:id="@+id/identificationSignals"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:id="@+id/identificationSignalsValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:text="@string/permitted_operating_hours"
+                      android:id="@+id/permittedOperatingHours"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:id="@+id/permittedOperatingHoursValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:text="@string/licence_date"
+                      android:id="@+id/licenseDate"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:id="@+id/licenseDateValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:text="@string/valid_terms"
+                      android:id="@+id/validTerms"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:id="@+id/validTermsValue"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:text="@string/movement_area"
+                      android:id="@+id/movementArea"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/primary_text_dark"
+                      android:maxLines="1"
+                      android:id="@+id/movementAreaValue"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/primary_text_dark"
+                  android:maxLines="1"
+                  android:text="@string/radio_equipment_location"
+                  android:id="@+id/radioEquipmentLocation"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/primary_text_dark"
+                  android:maxLines="4"
+                  android:id="@+id/radioEquipmentLocationValue"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/primary_text_dark"
+                  android:maxLines="1"
+                  android:text="@string/radio_spec"
+                  android:id="@+id/radioSpec1"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/primary_text_dark"
+                  android:maxLines="8"
+                  android:id="@+id/radioSpec1Value"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

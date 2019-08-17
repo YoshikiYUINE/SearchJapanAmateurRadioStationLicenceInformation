@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">JapanAmateurRadioStationLicenceInformation</string>
+    <string name="describe_source_of_information">"This service is created based on the information acquired using the Web-API function of the Ministry of Internal Affairs and Communications, but the content of the service is not guaranteed by the Ministry of Internal Affairs and Communications."</string>
+    <string name="total_count">Total count: </string>
+    <string name="latest_update_date">Latest update: </string>
+    <string name="call_signs">Call sign</string>
+    <string name="regional_bureau_of_telecommunications">Regional Bureau of Telecommunications</string>
+    <string name="kanto_bureau_of_telecommunications">Kanto Bureau of Telecommunications</string>
+    <string name="hokkaido_bureau_of_telecommunications">Hokkaido Bureau of Telecommunications</string>
+    <string name="tohoku_bureau_of_telecommunications">Tohoku Bureau of Telecommunications</string>
+    <string name="shinetsu_bureau_of_telecommunications">Shinetsu Bureau of Telecommunications</string>
+    <string name="hokuriku_bureau_of_telecommunications">Hokuriku Bureau of Telecommunications</string>
+    <string name="tokai_bureau_of_telecommunications">Tokai Bureau of Telecommunications</string>
+    <string name="kinki_bureau_of_telecommunications">Kinki Bureau of Telecommunications</string>
+    <string name="chugoku_bureau_of_telecommunications">Chugoku Bureau of Telecommunications</string>
+    <string name="shikoku_bureau_of_telecommunications">Shikoku Bureau of Telecommunications</string>
+    <string name="kyushu_bureau_of_telecommunications">Kyushu Bureau of Telecommunications</string>
+    <string name="okinawa_office_of_telecommunications">Okinawa Office of Telecommunications</string>
+    <string name="cases_100">100 cases</string>
+    <string name="cases_500">500 cases</string>
+    <string name="clear">Clear</string>
+    <string name="search">Search</string>
+    <string name="validCallSign">please enter A–Z or 0–9</string>
+    <string name="search_result">Search result</string>
+    <string name="output_as_a_csv">Output as a CSV file</string>
+    <string name="number_of_acquisitions">Number of acquisitions</string>
+    <string name="permitted_operating_hours">Permitted Operating Hours</string>
+    <string name="licence_date">Licence Date</string>
+    <string name="valid_terms">Valid Terms</string>
+    <string name="movement_area">Movement Area</string>
+    <string name="radio_equipment_location">Radio Equipment Location</string>
+    <string name="radio_spec">Radio Spec</string>
+</resources>
