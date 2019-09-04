@@ -30,4 +30,5 @@
     <string name="movement_area">Movement Area</string>
     <string name="radio_equipment_location">Radio Equipment Location</string>
     <string name="radio_spec">Radio Spec</string>
+    <string name="loading">loading</string>
 </resources>

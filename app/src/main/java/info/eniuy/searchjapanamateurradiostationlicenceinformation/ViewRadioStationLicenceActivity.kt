@@ -131,10 +131,11 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
 
     @SuppressLint("StaticFieldLeak")
     private inner class RadioLicenceReceiver : AsyncTask<String, String, String>() {
+        val searchResult: TextView = findViewById(R.id.search_result)//searchResult label
         override fun onPreExecute() {//before async job of ui thread
             super.onPreExecute()
             Log.d("RadioLicenceReceiver", "start onPreExecute")
-
+            searchResult.setText(R.string.loading)//set value
         }
 
         override fun doInBackground(vararg params: String?): String {//async job
@@ -170,6 +171,7 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
             val totalCountText = findViewById<TextView>(R.id.totalCount)
             val searchResultList = findViewById<ListView>(R.id.search_result_list)
 
+
             val rootJSON = JSONObject(result)//result string to JSON object [root object]
 
             val licenceList = createLicenceList(rootJSON)//item of list view, SimpleAdapter args #2
@@ -184,6 +186,7 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
 
             latestUpdateText.text = getMusenInformation(rootJSON, lastUpdateDate)//set latestUpdateText
             totalCountText.text = getMusenInformation(rootJSON, totalCount)//set totalCountText
+            searchResult.setText(R.string.search_result)//change values
 
         }//fun onPostExecute
 

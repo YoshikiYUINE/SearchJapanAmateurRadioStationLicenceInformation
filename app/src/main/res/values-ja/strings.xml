@@ -21,7 +21,7 @@
     <string name="cases_500">500件</string>
     <string name="clear">クリア</string>
     <string name="search">検索</string>
-    <string name="validCallSign">呼出符号は次の値で入力してください [A-Z or 0-9]</string>
+    <string name="validCallSign">呼出符号は次の値で入力してください [A–Z or 0–9]</string>
     <string name="search_result">検索結果</string>
     <string name="output_as_a_csv">CSVファイルで出力</string>
     <string name="number_of_acquisitions">取得件数</string>
@@ -31,4 +31,5 @@
     <string name="movement_area">移動範囲</string>
     <string name="radio_equipment_location">無線設備の設置場所/常置場所</string>
     <string name="radio_spec">電波の形式、周波数及び空中線電力</string>
+    <string name="loading">ロード中</string>
 </resources>
