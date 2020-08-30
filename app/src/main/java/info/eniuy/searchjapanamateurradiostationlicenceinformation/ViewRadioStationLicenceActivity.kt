@@ -4,9 +4,9 @@ package info.eniuy.searchjapanamateurradiostationlicenceinformation
 import android.annotation.SuppressLint
 import android.net.Uri
 import android.os.AsyncTask
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.customtabs.CustomTabsIntent
+import androidx.browser.customtabs.CustomTabsIntent
 import android.util.Log
 import android.widget.*
 import org.json.JSONObject
@@ -59,8 +59,8 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_view_radio_station_licence)
         Log.d("ViewRadioStationLicenceActivity", "start ViewRadioStationLicenceActivity")
         val intent = intent //intent from MainActivity
-        val csvRequestUrl = intent.getStringExtra("csvRequestUrl")//csvRequestUrl from MainActivity
-        val jsonRequestUrl = intent.getStringExtra("jsonRequestUrl")//jsonRequestUrl from MainActivity
+        val csvRequestUrl = intent.getStringExtra("csvRequestUrl").toString()//csvRequestUrl from MainActivity
+        val jsonRequestUrl = intent.getStringExtra("jsonRequestUrl").toString()//jsonRequestUrl from MainActivity
         val outputAsACsvButton = findViewById<Button>(R.id.output_as_a_csv)//outputAsACsvButton
 
         startRadioLicenceReceiver(jsonRequestUrl)//set radio licence list
@@ -140,7 +140,7 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
 
         override fun doInBackground(vararg params: String?): String {//async job
             Log.d("RadioLicenceReceiver", "start doInBackground")
-            Log.d("URL", params[0])
+            Log.d("URL", params[0].toString())
 
             val url = URL(params[0])//create url object, params[0] is jsonRequestUrl
             val httpsURLConnection =
@@ -160,12 +160,12 @@ class ViewRadioStationLicenceActivity : AppCompatActivity() {
 
         override fun onProgressUpdate(vararg values: String?) {//call from publishProgress
             super.onProgressUpdate(*values)
-            Log.d("responseCode", values[0])//http response code
+            Log.d("responseCode", values[0].toString())//http response code
         }//fun onProgressUpdate
 
         override fun onPostExecute(result: String?) {//finished doInBackground then call this on ui thread
             super.onPostExecute(result)
-            Log.d("result", result)
+            Log.d("result", result.toString())
 
             val latestUpdateText = findViewById<TextView>(R.id.latest_update_date)
             val totalCountText = findViewById<TextView>(R.id.totalCount)

@@ -1,10 +1,11 @@
 package info.eniuy.searchjapanamateurradiostationlicenceinformation
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity()//,LoaderManager.LoaderCallbacks<String>
@@ -69,23 +70,6 @@ class MainActivity : AppCompatActivity()//,LoaderManager.LoaderCallbacks<String>
         totalCountAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         selectTotalCount.adapter = totalCountAdapter//set adapter for spinner
 
-        /*
-        //set listener
-        selectTotalCount.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(//on Item selected
-                parent: AdapterView<*>?,
-                view: View?, position: Int, id: Long
-            ) {
-                val spinnerParent = parent as Spinner
-                val totalCount = spinnerParent.selectedItem as String //selected value
-
-            }//override fun onItemSelected
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }//on nothing selected
-        }//selectTotalCount.onItemSelectedListener
-        */
-
         val regionalBureauOfTelecommunicationsAdapter =
             ArrayAdapter(//create array adapter for regionalBureauOfTelecommunications
                 applicationContext,//set context
@@ -95,23 +79,6 @@ class MainActivity : AppCompatActivity()//,LoaderManager.LoaderCallbacks<String>
         regionalBureauOfTelecommunicationsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         selectRegionalBureauOfTelecommunications.adapter =
             regionalBureauOfTelecommunicationsAdapter//set adapter for spinner
-
-        /*
-        //set listener
-        selectRegionalBureauOfTelecommunications.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?, position: Int, id: Long
-            ) {//on Item selected
-                val spinnerParent = parent as Spinner
-                val regionalBureauOfTelecommunications = spinnerParent.selectedItem as String //selected value
-
-            }//override fun onItemSelected
-            override fun onNothingSelected(parent: AdapterView<*>?) {//on nothing selected
-
-            }//override fun onNothingSelected
-        }//selectRegionalBureauOfTelecommunications.onItemSelectedListener
-        */
 
         buttonClear.setOnClickListener {
             //click buttonClear then
@@ -185,7 +152,7 @@ class MainActivity : AppCompatActivity()//,LoaderManager.LoaderCallbacks<String>
     }//getSelectedSpinnerPosition
 
     private fun getInputTextValue(editText: EditText): String {
-        return editText.text.toString().toUpperCase()//get value and convert to upper case
+        return editText.text.toString().toUpperCase(Locale.ROOT)//get value and convert to upper case
     }//getInputTextValue
 
     private fun convertPositionIntToParamDcVal(position: Int): String {
